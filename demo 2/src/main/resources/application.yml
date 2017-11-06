@@ -3,11 +3,18 @@ spring:
     stream:
         bindings:
           input:
+            destination: testIn
             consumer:
-              autoCommitOnError: true
+              header-mode: raw #so we can send from the console consumer
           custom_dlq:
             destination: custom_dlq
         kafka:
-           binder:
-             brokers: 192.168.99.100
-             zkNodes: 192.168.99.100
+          bindings:
+            input:
+              autoCommitOnError: true
+#           binder:
+#             brokers: 192.168.99.100
+#             zkNodes: 192.168.99.100
+#logging:
+#  level:
+#    org.springframework.integration: debug

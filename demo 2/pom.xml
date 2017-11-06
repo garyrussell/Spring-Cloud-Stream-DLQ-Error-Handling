@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>demoSCStErrors</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>demo</name>
+	<name>demoSCStErrors</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -29,6 +29,25 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream-binder-kafka</artifactId>
+			<version>1.3.0.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream-binder-kafka-core</artifactId>
+			<version>1.3.0.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream</artifactId>
+			<version>1.3.0.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream-codec</artifactId>
+			<version>1.3.0.RELEASE</version>
 		</dependency>
 
 		<dependency>
